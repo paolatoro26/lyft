@@ -4,6 +4,20 @@ body
 	margin: 0;
 	padding: 0;
 }
+.head h2
+{
+	margin: 0;
+}
+.head i
+{
+	font-size: 35px;
+	padding-top:30%;
+}
+.head hr
+{
+	width: 100%;
+	color: #444;
+}
 /*------------------index-------------*/
 .index
 {
@@ -48,27 +62,66 @@ body
 	padding: 40px
 }
 /*-----------------sign up------------*/
-
-.sign-head h3
-{
-	margin: 0
-}
-.sign-head hr
-{
-	width: 100%;
-	color: #444;
-}
-.sign-head input
-{
-	width: 100%;
-	padding-left:-20px 
-}
 .sign-input h3
 {
 	margin: 0;	
 }
-.sig-input input{
-
+.input span
+{
+	margin-right: -10;
 }
-
-
+.input input
+{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 10px
+}
+.check
+{
+	margin-top: 10%
+}
+.check span
+{
+	color: #58D3F7
+}
+.check h4
+{
+	margin: 0
+}
+input[type="checkbox"]{
+ -webkit-appearance: none;
+ border: 1px solid #00BFFF;
+ width: 15px;
+ height: 15px;
+ border-radius: 2px;
+}
+ 
+input[type="checkbox"]:checked{
+ background: #00BFFF;
+}
+/*-----------------country------------*/
+.boton-select img
+{
+	padding: 0 5px
+}
+.select-paises p
+{
+	margin-top: 20px
+}
+/*------------------paises------------*/
+.banderas img
+{
+	padding-right: 15px
+}
+.banderas li
+{
+	list-style: none
+}
+/*
+paises.csv
+convertidor de csv a json
+poner ese archivo en otra plantilla js y lo exportamos
+compress to a single line-height: 
+hacer una variable que tenga ahi lo q m convirtio en una linea
+JSON.parse(paises);
+boostrapFormHelper.com*/
