@@ -1,3 +1,4 @@
+
 /*------------------Comun-------------*/
 body
 {
@@ -79,7 +80,12 @@ footer a
 	width: 100%;
 	padding: 40px
 }
-/*-----------------sign up------------*/
+/*-----------------datos------------*/
+#name,#email
+{
+	padding-left: 38px;
+	
+}
 .input input
 {
 	width: 100%;
@@ -116,7 +122,7 @@ input[type="checkbox"]{
 input[type="checkbox"]:checked{
  background: #00BFFF;
 }
-/*-----------------country------------*/
+/*-----------------paises-------------*/
 .boton-select img
 {
 	padding: 0 5px
@@ -125,7 +131,7 @@ input[type="checkbox"]:checked{
 {
 	margin-top: 20px
 }
-/*------------------paises------------*/
+/*------------------paises--------------*/
 .banderas img
 {
 	padding-right: 15px
