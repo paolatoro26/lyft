@@ -1,4 +1,4 @@
-
+/*
 function init()
 {
 	var lista=document.getElementById("lista-paises");
@@ -20,5 +20,5 @@ function  onButtonClick()
 if(!/[0-9]+/.test(correo))
         {
             alert("codigo incorrecto!");
-        }
+        }*/
  

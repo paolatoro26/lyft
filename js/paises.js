@@ -6,11 +6,12 @@ function init()
 	
 	for (var i=0; i<links.length; i++)
 	{
-		links.addEventListener("click", o)
+		links.addEventListener("click", obtenerPais)
 	}
 }
-function o()
+
+function obtenerPais(evt)
 {
-	locaStorage.setItem
+	localStorage.setItem("pais", evt.target)
 }
 
