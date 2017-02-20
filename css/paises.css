@@ -1,9 +1,10 @@
 
-.banderas img
+img
 {
 	padding-right: 15px
 }
-.banderas li
+li
 {
-	list-style: none
+	list-style: none;
+	color: black
 }

@@ -1,6 +1,6 @@
  function init()
 {
-    var paises=
+  var paises=
   [{"nombre":"Australia", "phone_code": "355", "imagen":'images/paises/au.png'},   
   {"nombre":"Canada","phone_code": "49" , "imagen": 'images/paises/ca.png'},  
   { "nombre":"China","phone_code": "210","imagen": 'images/paises/cn.png'},
@@ -17,11 +17,10 @@
   
         for(var i  in paises)
         {
-        var html='<a href="signup.html"> <li><img class="imagen"  src="'+paises[i].imagen+'" alt="">'+paises[i].nombre+'<span class="phoneC">'+paises[i].phone_code+'</span></li></a>';
+        var html='<a href="signup.html"> <li><img class="imagen"  src="'+paises[i].imagen+'" alt="">'+paises[i].nombre+'<span class="phoneC" style="display:none">'+paises[i].phone_code+'</span></li></a>'+"<hr>";
     
         listaPaises.innerHTML += html;
         }
-
     var link =document.getElementsByTagName("li");
     for (var i=0 ;i<link.length;i++){
 		link[i].addEventListener('click', onLinkClick);

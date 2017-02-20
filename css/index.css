@@ -3,19 +3,24 @@ body
 	background: url(../images/portada.jpg) no-repeat;
 	background-size: cover ;
     background-attachment: fixed;
-    background-position: top center; 	
+    background-position: top center; 
 }
+
+/* -------titulo------*/
 .index .titulo
 {
-	padding-top: 30%;
+	padding-top: 25%;
 	margin-bottom: 70%;
 }
 .index .titulo img
 {
 	width: 200px 
 }
+/* -------botones------*/
 .index .botones
 {
+	position: absolute;
+	bottom: 20px;
 	padding:200px 20px;
 	padding-bottom: 0
 }
@@ -24,28 +29,25 @@ body
 	text-decoration:none;
 	color: white
 }
-.index .boton-i button
+.index button
 {
-	background: rgba(122,114,114,.2);
 	border:white 3px solid;
+	width: 100%;
+	padding: 40px;
 	border-radius: 15px;
 	color:white;
 	font-size: 30px;
 }
+.index .boton-i button
+{
+	background: rgba(122,114,114,.2);
+}
 .index .boton-d button
 {
 	background:-webkit-linear-gradient(left, purple,#FF00FF);
-	border:transparent 3px solid;
-	border-radius: 15px;
-	color:white;
-	font-size: 30px
+	border: transparent;
 }
-.index button
-{
-	width: 100%;
-	padding: 40px
-}
-/*
+/* ----------apuntes de Json---------
 paises.csv
 convertidor de csv a json
 poner ese archivo en otra plantilla js y lo exportamos

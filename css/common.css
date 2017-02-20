@@ -1,7 +1,7 @@
 
-header h2
+header
 {
-	margin: 0;
+	margin-top: 5%;
 }
 header i
 {
@@ -14,13 +14,11 @@ header hr
 	width: 100%;
 	color: #444;
 }
-
-
 .btn-next
 {
+	color: white;
 	background: rgb(248,69,186);
 	border: none;
-	color: white;
 	width: 100%;
 	font-size: 30px;
 	padding: 5% !important;
