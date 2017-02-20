@@ -1,5 +1,4 @@
 
-/*-----------------paises-------------*/
 .boton-select img
 {
 	padding: 0 5px
@@ -8,7 +7,16 @@
 {
 	margin-top: 20px
 }
-button
+
+#span
 {
-	margin-top: 5%
+	position: absolute;
+	z-index: 100;
+	left: 64px;
+	top:7px;
+}
+input
+{
+	padding-left: 42px !important;
+	position: relative;
 }

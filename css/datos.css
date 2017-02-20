@@ -40,13 +40,3 @@ input[type="checkbox"]{
 input[type="checkbox"]:checked{
  background: #00BFFF;
 }
-
-
-/*
-paises.csv
-convertidor de csv a json
-poner ese archivo en otra plantilla js y lo exportamos
-compress to a single line: 
-hacer una variable que tenga ahi lo q m convirtio en una linea
-JSON.parse(paises);
-boostrapFormHelper.com*/
