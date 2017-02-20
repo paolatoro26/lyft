@@ -1,0 +1,29 @@
+
+header h2
+{
+	margin: 0;
+}
+header i
+{
+	font-size: 35px !important;
+	padding-top:30%;
+	color: black
+}
+header hr
+{
+	width: 100%;
+	color: #444;
+}
+footer a
+{
+	text-decoration: none;
+	
+}
+.boton-nav
+{
+	background: rgb(248,69,186)!important;
+	color: white !important;
+	width: 100%;
+	font-size: 30px!important;
+	padding: 2% 
+}

@@ -1,9 +1,11 @@
+function init(){
+    var bandera=document.getElementById("bandera");
+    var codigopais=document.getElementById("codigo-pais");
+    
+    var banderaEnlace= localStorage.getItem('srcimg');
+    var codigo = localStorage.getItem('phone-code');
+    
+    bandera.src=banderaEnlace;
+    codigopais.textContent=codigo;
+}
 
-
-//select pais
-var codigoPais=document.getElementById("codigo-pais").value;
-if(!/[0-9]+/.test(correo))
-        {
-            alert("codigo incorrecto!");
-        }
- 
