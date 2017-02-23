@@ -1,3 +1,7 @@
+//---------------- CODIGO CON JQUERY ----------------
+
+
+/* -------------- CODIGO SOLO JAVASCRIPT ------------
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -14,10 +18,8 @@ function initMap() {
     label:"w",
     icon:""//ruta del imagen
   	});
-}
-
-/*
-
+}*/
+/* -----------OTRA MANERA DE LLAMAR MAP -------
 function initMap()
 {
 	var mapConfig={
@@ -27,7 +29,6 @@ function initMap()
 					},
 			zoom:8
 	};
-
 	miMapa= new google.maps.Map(document.getElementById("map"),mapConfig);//donde aparecera
 		/*{
 			center:{
@@ -38,7 +39,5 @@ function initMap()
 			}	
 		);	
 	var latLongPazPeru={lat:-16.457,lng: -71.134553566};
-
-	
 }
 //preferible usar iconos en png*/

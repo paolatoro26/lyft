@@ -1,4 +1,23 @@
- function init()
+//---------------- CODIGO CON JQUERY ----------------
+$(document).ready(function(){
+  var paises = [{"nombre":"Australia", "phone_code": "355", "imagen":'images/paises/au.png'},   
+  {"nombre":"Canada","phone_code": "49" , "imagen": 'images/paises/ca.png'},  
+  { "nombre":"China","phone_code": "210","imagen": 'images/paises/cn.png'},
+  { "nombre":"Francia","phone_code": "165","imagen": 'images/paises/fr.png'},
+  { "nombre":"India","phone_code": "217","imagen": 'images/paises/in.png'},
+    ];
+  var lista=$("#lista-paises");
+  for (var i in paises)
+  {
+    lista.after('<a href="signup.html"> <li class="listaMovil"><img class="imagen"  src="'+paises[i].imagen+'" alt="">'+paises[i].nombre+'<span class="phoneC" style="display:none">'+paises[i].phone_code+'</span></li></a>'+"<hr>");
+  }
+  var listaMovil = $(".listaMovil")
+})
+  
+
+
+/* -------------- CODIGO SOLO JAVASCRIPT ------------
+function init()
 {
   var paises=
   [{"nombre":"Australia", "phone_code": "355", "imagen":'images/paises/au.png'},   
@@ -14,7 +33,6 @@
   {"nombre":"Australia", "phone_code": "355", "imagen":'images/paises/au.png'},
     ];
     var listaPaises= document.getElementById("lista-paises");//ul
-  
         for(var i  in paises)
         {
         var html='<a href="signup.html"> <li><img class="imagen"  src="'+paises[i].imagen+'" alt="">'+paises[i].nombre+'<span class="phoneC" style="display:none">'+paises[i].phone_code+'</span></li></a>'+"<hr>";
@@ -26,7 +44,6 @@
 		link[i].addEventListener('click', onLinkClick);
     }
 }
-
 function onLinkClick(evt)
 {   
     var imgSrc=evt.currentTarget.getElementsByClassName("imagen")[0].src;
@@ -34,3 +51,4 @@ function onLinkClick(evt)
     localStorage.setItem('srcimg',imgSrc);
     localStorage.setItem('code',codigo);
 }
+*/

@@ -3,12 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sign up</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+	</script>
 	<link rel="stylesheet" href="css/signup.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
-<body onload="init()">
+<body>
 	<header>
 		<div class="container">
 			<div class="row">
@@ -36,16 +38,16 @@
         					<a type="button" href="paises.html" class="btn btn-default dropdown-toggle boton-select" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img id="bandera" src="images/paises/pe.png" alt=""><span class="caret"></span></a>	
       					</div>
       					<span id="span"><b>+051</b></span>
-      					<input id="codigo-pais" type="text" placeholder="9827726628" class="form-control" aria-label="..." onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+      					<input id="codigo-pais" type="text" placeholder="9827726628" class="form-control" aria-label="..." onKeypress="soloNumeros()">
    					</div>
-   					<p>We´ll send a text to verfy your phone</p>
+   					<p>We´ll send a text to verify your phone</p>
   				</div>
 			</div>
 		</div>
 
 	</section>
 	<footer>
-		<a class="btn btn-next" href="datos.html">Next</a>
+		<a class="btn btn-next NEXT" onclick="mostrarCodigo()" href="datos.html">Next</a>
 	</footer>
 	<script src="js/paises.js"></script>
 	<script src="js/signup.js"></script>
