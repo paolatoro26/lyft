@@ -1,21 +1,35 @@
 //---------------- CODIGO CON JQUERY ----------------
-$(document).ready(function(){
-  var paises = [{"nombre":"Australia", "phone_code": "355", "imagen":'images/paises/au.png'},   
-  {"nombre":"Canada","phone_code": "49" , "imagen": 'images/paises/ca.png'},  
-  { "nombre":"China","phone_code": "210","imagen": 'images/paises/cn.png'},
-  { "nombre":"Francia","phone_code": "165","imagen": 'images/paises/fr.png'},
-  { "nombre":"India","phone_code": "217","imagen": 'images/paises/in.png'},
-    ];
-  var lista=$("#lista-paises");
-  for (var i in paises)
-  {
-    lista.after('<a href="signup.html"> <li class="listaMovil"><img class="imagen"  src="'+paises[i].imagen+'" alt="">'+paises[i].nombre+'<span class="phoneC" style="display:none">'+paises[i].phone_code+'</span></li></a>'+"<hr>");
-  }
-  var listaMovil = $(".listaMovil")
-})
+$(document).ready(init);
+
+function init(){
   
+  var listaPaises=$("#lista-paises");
+  var pais=$.parseJSON(paises);
+  $.each(pais,function(){
+    var htmlPais='<a href="signup.html"> <li class="listaMovil">'+
+    '<img class="imagen" src="'+this['imagen']+'" alt="">'+this['nombre']+
+    '<span class="phoneC" style="display:none">'+this['phone_code']+'</span></li></a><hr>';
 
-
+    listaPaises.append(htmlPais);
+  });
+  asignaEventoClick();
+}
+function asignaEventoClick ()
+{
+   var list = $("li");
+   $.each(list,function(){
+    $(this).on('click',onLinkClick)
+   });
+    
+}
+function onLinkClick(evt)
+{   
+    var imgSrc=$(evt.currentTarget).find(".imagen").attr("src");
+    var codigo =$(evt.currentTarget).find(".phoneC").text();
+    localStorage.setItem('srcimg',imgSrc);
+    localStorage.setItem('code',codigo);
+}
+  
 /* -------------- CODIGO SOLO JAVASCRIPT ------------
 function init()
 {
@@ -47,7 +61,7 @@ function init()
 function onLinkClick(evt)
 {   
     var imgSrc=evt.currentTarget.getElementsByClassName("imagen")[0].src;
-    var codigo=evt.currentTarget.getElementsByClassName("phoneC")[0].textContent;
+    var codigo =evt.currentTarget.getElementsByClassName("phoneC")[0].textContent;
     localStorage.setItem('srcimg',imgSrc);
     localStorage.setItem('code',codigo);
 }

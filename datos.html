@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
-<body onload="init()">
+<body>
 	<header>
 		<div class="container">
 			<div class="row">
@@ -33,14 +33,16 @@
 		<div class="container">
 			<div class="row input">
 				<div class="col-xs-10 col-xs-offset-1">	
-								
-					<div class="form-group">
+					<!--Input name-->		
+					<div class="form-group nombre">
     					<span class="fa fa-user-circle-o" aria-hidden="true"></span>
-  						<input type="email" class="form-control" id="name" placeholder="First name Last name">
+  						<input type="text" class="form-control" id="name" placeholder="First name Last name">
   					</div> <br>
- 					<div class="form-group">
+					<!--Input email-->	
+ 					<div class="form-group correo">
  						<span class="fa fa-envelope-o" aria-hidden="true"></span>
-    					<input type="password" class="form-control" id="email" placeholder="Email">
+    					<input type="email" class="form-control" id="email" placeholder="Email">
+    					<div id="alerta"></div>
   					</div>
 				</div>
 			</div>
