@@ -3,27 +3,27 @@
 $(document).ready(init);
 function init()
 {
-	$("#name").keydown(validarNombre);
+	$("#name").keyup(validarNombre);
 	//$("#email").keyup(validarEmail);
 }
 function crearAlerta(container,mensaje)
 {
 	var existeSpan=$(container).find("span");
+	var span=$("<span> + mensaje + </span>")
 	if(existeSpan.length=="")
 	{
-		container.append(mensaje);
+		container.append(span);
 	}
 }
-function validarNombre()
-{
-	var contenedor=$(".nombre");
-	var input=$("#name").val();
-	if(!/[a-z]+/.test(input))
-		{
-			crearAlerta(contenedor, "Nombre invalido");
-		}
+function validarNombre(evt)
+{    
+	var contenedor = $(".nombre");
+	if($(evt.target).val()=="")
+       crearAlerta(contenedor,"pao")
 }
+
 /* -------------- CODIGO SOLO JAVASCRIPT ------------
+
 function validarEmail()
 {
 	var alertaSpan = '<span>Correo invalido</span>';
@@ -36,13 +36,5 @@ function validarEmail()
 		$(alertaSpan).remove();
 	}
 }
-
-
-//select pais
-var codigoPais=document.getElementById("codigo-pais").value;
-if(!/[0-9]+/.test(correo))
-        {
-            alert("codigo incorrecto!");
-        }
 */
 
