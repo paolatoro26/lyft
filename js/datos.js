@@ -4,22 +4,29 @@ $(document).ready(init);
 function init()
 {
 	$("#name").keyup(validarNombre);
-	//$("#email").keyup(validarEmail);
+	$("#email").keyup(validarEmail);
 }
-function crearAlerta(container,mensaje)
-{
-	var existeSpan=$(container).find("span");
-	var span=$("<span> + mensaje + </span>")
-	if(existeSpan.length=="")
-	{
-		container.append(span);
-	}
-}
+var correcto = true;
 function validarNombre(evt)
 {    
-	var contenedor = $(".nombre");
-	if($(evt.target).val()=="")
-       crearAlerta(contenedor,"pao")
+	if($(evt.target).val()==""||/[0-9]+/.test($(evt.target).val()) )
+	{
+		alert("Nombre incorrecto, ingrese de nuevo por favor")
+   		correcto = false
+	}else{
+		correcto =true;
+	}
+       
+
+}
+function validarEmail(evt) {
+	if(!/[a-zaA-Z0-9]+[@][a-zA-Z]+[.][a-zA-Z]+/.test($(evt.target).val()) )
+	{
+		alert("Correo incorrecto, ingrese de nuevo por favor")
+		correcto = false
+	}else{
+		correcto = true;
+	}	
 }
 
 /* -------------- CODIGO SOLO JAVASCRIPT ------------
