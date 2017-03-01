@@ -1,11 +1,7 @@
-/* -----------mapa----------*/
-/* --------menu movil-------*/
-/* -----------mapa----------*/
 #map
 {
-	height:100%;
-	width:100%;
-	position: absolute;
+	height: 500px;
+	margin-top:2%;
 }
 img
 {
@@ -45,19 +41,6 @@ li
 {
 	width: 100%
 }
-.boton-autos
-{
-	position: absolute;
-	bottom: 70px;
-	width: 100%
-}
- footer
-{
-	position: absolute;
-	bottom: 0;
-	width: 100%
-}
-
 
 
 

@@ -3,9 +3,9 @@ $(document).ready(init);
 
 function init(){
   
-  var listaPaises=$("#lista-paises");
-  var pais=$.parseJSON(paises);
-  $.each(pais,function(){
+  var listaPaises=$("#lista-paises");//ul
+  var pais = $.parseJSON(paises);//paises
+  $.each(pais,function(){//paises.each(function)
     var htmlPais='<a href="signup.html"> <li class="listaMovil">'+
     '<img class="imagen" src="'+this['imagen']+'" alt="">'+this['nombre']+
     '<span class="phoneC" style="display:none">'+this['phone_code']+'</span></li></a><hr>';
@@ -19,8 +19,7 @@ function asignaEventoClick ()
    var list = $("li");
    $.each(list,function(){
     $(this).on('click',onLinkClick)
-   });
-    
+   }); 
 }
 function onLinkClick(evt)
 {   
