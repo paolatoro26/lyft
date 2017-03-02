@@ -1,6 +1,24 @@
 /* -----------mapa----------*/
 /* --------menu movil-------*/
 /* -----------mapa----------*/
+header
+{
+	padding-top: 20px;
+	z-index: 1000;
+	position: absolute;
+}
+header .foto, header .icono
+{
+	padding: 5px;
+	width: 70px;
+	border-radius: 50%;
+	border:1px solid #888;
+	background: white
+}
+header .icono
+{
+	font-size: 60px
+}
 #map
 {
 	height:100%;
@@ -22,11 +40,15 @@ li
 	margin: 5px;
 	width: 240px
 }
+.direccion,.lista
+{
+	font-size: 25px
+}
+
 #pickup
 {
 	color: white;
 	background: #29088A;
-	width: 100%;
 	padding: 20px;
 	display: block;
 	margin: 2px;
@@ -48,11 +70,12 @@ li
 .boton-autos
 {
 	position: absolute;
-	bottom: 70px;
+	bottom: 90px;
 	width: 100%
 }
- footer
+footer
 {
+	font-size: 30px;
 	position: absolute;
 	bottom: 0;
 	width: 100%

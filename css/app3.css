@@ -1,46 +1,86 @@
-#map
+header
 {
-	height: 500px;
-	margin-top:2%;
+	margin: 20px 0;
 }
-img
+.titulo
+{
+	font-size: 25px;
+	color: #A4A4A4;
+	font-family: Arial
+}
+header img
+{
+	width: 40px;
+	display: inline;
+}
+.menu
+{
+	width: 20px
+}
+.datos img
+{
+	border-radius: 50%;
+	padding: 10px;
+	border:#999 1px solid; 
+	margin: 14% 0 10% 0
+}
+.menu
 {
 	width: 30px;
-	display: inline-block;
+	height: 30px;
+	color: black
 }
-li:hover
+.tips button:hover
 {
-	background: #E6E6E6;
+	background: #FE2EC8;
 	color: white
 }
-li
+button
 {
-	margin: 5px;
-	width: 240px
+	width:110px;
+	margin: 15px;
+	font-size: 25px!important
 }
-#pickup
+button:first-child
+{
+	width: 200px
+}
+.visa
+{
+	display: absolute;
+	margin-right: -80px;
+	z-index: 2000!important
+	
+}
+.input
+{
+	padding:12px;
+	margin:2% 5%;
+	width: 90%;
+	border:#999 1px solid;
+	border-radius: 10px
+}
+.costo
+{
+	margin-top: 15%
+}
+.costo span
+{
+	font-size: 60px;
+}
+.next
 {
 	color: white;
-	background: #29088A;
-	width: 100%;
+	background: #537895;
 	padding: 20px;
+	font-size: 35px;
 	display: block;
 	margin: 2px;
 	border-radius: 10px
 }
-#pickup:hover
+ footer
 {
-	text-decoration: none
-}
-.badge
-{
-	background: none !important;
-	color: black !important
-}
-.autos
-{
+	position: absolute;
+	bottom: 0;
 	width: 100%
 }
-
-
-

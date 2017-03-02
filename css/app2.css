@@ -1,48 +1,111 @@
+/* -----------mapa----------*/
+/* --------menu movil-------*/
+/* -----------mapa----------*/
+header
+{
+	padding-top: 20px;
+	z-index: 1000;
+	position: absolute;
+}
+header .foto
+{
+	padding: 5px;
+	width: 70px;
+	border-radius: 50%;
+	border:1px solid #888;
+	background: white
+}
+header .icono
+{
+	font-size: 60px
+}
 #map
 {
-	height: 500px;
-	margin-top:2%;
+	height:100%;
+	width:100%;
+	position: absolute;
 }
 img
 {
 	width: 30px;
 	display: inline-block;
 }
-li:hover
+.selecto
 {
-	background: #E6E6E6;
-	color: white
+	padding: 10px;
+	position: absolute;
+	z-index: 1000;
+	bottom: 90px;
+	background:#F2F2F2;
+	width: 100%;
+	border-radius: 10px
 }
-li
+.selecto img
 {
-	margin: 5px;
-	width: 240px
+	width: 130px;
+	margin-top: 20px
 }
-
 
 #pickup
 {
 	color: white;
 	background: #FE2EC8;
-	width: 100%;
 	padding: 20px;
 	display: block;
-	margin: 2px;
 	border-radius: 10px
 }
 #pickup:hover
 {
 	text-decoration: none
 }
-.badge
-{
-	background: none !important;
-	color: black !important
-}
+
 .autos
 {
 	width: 100%
 }
+.circulo-a
+{
+	color: #29088A
+}
+.circulo-r
+{
+	color: #FE2EC8
+}
+.boton-autos
+{
+	position: absolute;
+	bottom: 90px;
+	width: 100%
+}
+.selecto
+{
+	margin:10px;
+	
+}
+.mastercard img
+{
+	width: 30px;
+	margin-right: 10px
+}
+.ver
+{
+	width: 5px
+}
+.puntos
+{
+	background: white;
+	padding-top: 10px
+}
+footer
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size:30px;
+}
+
+
+
 
 
 

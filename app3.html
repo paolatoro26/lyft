@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>App</title>
+	<title>App3</title>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
 	</script>
 	<link rel="stylesheet" href="css/app3.css">
@@ -13,27 +13,49 @@
 
 </head>
 <body>
-	<section class="mapa">
-		<div id="map"></div>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="menu col-md-1 col-xs-1">
+					<span class=" menu fa fa-ellipsis-v" aria-hidden="true"></span>
+				</div>
+				<div class="col-md-2 col-xs-2">
+					<img src="images/lyft.png" alt="">
+				</div>
+				<div class=" text-center col-md-5 col-xs-6">
+					<span class="titulo">Payment</span>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</header>
+	<section class="datos text-center ">
+		<div class="container">
+			<div class="foto">
+				<img src="images/yoni.jpg" alt="">
+			</div>
+		<div class="tips">
+			<div class="btn-group" role="group" >
+ 				<button type="button" class=" btn btn-default">No tip</button>
+ 				<button type="button" class="btn btn-default">$1</button>
+  				<button type="button" class="btn btn-default">$2</button>
+  				<button type="button" class="btn btn-default">$5</button><button type="button" class="btn btn-default">Other</button>
+			</div>
+			<div>
+				<span class="visa fa fa-cc-visa" aria-hidden="true"></span>
+				<input  class="input" placeholder="Payment       					*1234 >"type="text">
+			</div>
+			
+			<div class="costo">
+				<span>$9.00</span>
+			</div>
+		</div>
 	</section>
-	<section class="boton-autos">
-		<div class="btn-group dropup autos">
-			<button type="button" class=" autos btn btn-default dropdown-toggle"
-          data-toggle="dropdown">
-    		<span  class=" flecha fa fa-chevron-circle-down icono"></span><span class="direccion">2300 Harrison St. <br>Pickup</span>
-  			</button>
-  			<ul class="dropdown-menu">
-    			<li class="list-group-item"><img src="images/auto3.png" alt=""><span class="badge">3 <br>min</span><span class="badge">Line <br>Shared, 2 riders max</span></li>
-   				<li class="list-group-item"><img src="images/auto1.jpg" alt=""><span class="badge">3 <br>min</span><span class="badge">Lyft <br> 4 seats</span></li>
-   				<li class="list-group-item"><img src="images/auto2.jpg" alt=""><span class="badge">4 <br>min</span><span class="badge">Plus <br>6 seats</span></li>
-   				<li class="list-group-item"><img src="images/auto4.png" alt=""><span class="badge">3 <br>min</span><span class="badge">Premier <br>High-end, 4 seats</span></li>
- 			</ul>		
-	</section>
-	<footer>
-		<a class="text-center" id="pickup" href="">Set Pickup</a>
+	<footer class="text-center">
+		<a class="next" href="#">Next</a>
 	</footer>
 	<script src="js/app.js"></script>
-	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4qAIK7qDA9Yu4v3HaiKnvBX3Fel2ZL6s&callback=initMap"
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4qAIK7qDA9Yu4v3HaiKnvBX3Fel2ZL6s&callback=initMap"
         async defer>
     </script>  
 </body>
