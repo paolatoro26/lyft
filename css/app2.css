@@ -1,6 +1,8 @@
-/* -----------mapa----------*/
-/* --------menu movil-------*/
-/* -----------mapa----------*/
+body .row
+{
+	margin: 0
+}
+/* ---------header----------*/
 header
 {
 	padding-top: 20px;
@@ -19,17 +21,31 @@ header .icono
 {
 	font-size: 60px
 }
+/* -----------mapa----------*/
 #map
 {
 	height:100%;
 	width:100%;
 	position: absolute;
 }
-img
+/* -------flechas nav-------*/
+.flechas
 {
-	width: 30px;
-	display: inline-block;
+	position: absolute;
+	z-index: 1000;
+	bottom: 380px;
+	font-size: 30px;
+	width: 100%
 }
+.flechas span
+{
+	border-radius:50%;
+	background: white;
+	border: 1px black solid;
+	padding: 12px;
+	display: inline;
+}
+/* -------auto select-------*/
 .selecto
 {
 	padding: 10px;
@@ -45,24 +61,22 @@ img
 	width: 130px;
 	margin-top: 20px
 }
-
-#pickup
-{
-	color: white;
-	background: #FE2EC8;
-	padding: 20px;
-	display: block;
-	border-radius: 10px
-}
-#pickup:hover
-{
-	text-decoration: none
-}
-
 .autos
 {
 	width: 100%
 }
+.boton-autos
+{
+	position: absolute;
+	bottom: 90px;
+	width: 100%
+}
+.mastercard img
+{
+	width: 30px;
+	margin-right: 10px
+}
+/* --------div puntos-------*/
 .circulo-a
 {
 	color: #29088A
@@ -71,22 +85,6 @@ img
 {
 	color: #FE2EC8
 }
-.boton-autos
-{
-	position: absolute;
-	bottom: 90px;
-	width: 100%
-}
-.selecto
-{
-	margin:10px;
-	
-}
-.mastercard img
-{
-	width: 30px;
-	margin-right: 10px
-}
 .ver
 {
 	width: 5px
@@ -94,7 +92,22 @@ img
 .puntos
 {
 	background: white;
-	padding-top: 10px
+	padding-top: 10px;
+	font-size: 20px;
+	
+}
+/* ---------footer----------*/
+.pickup
+{
+	color: white;
+	background: #FE2EC8;
+	padding: 20px;
+	display: block;
+	border-radius: 10px
+}
+.pickup:hover
+{
+	text-decoration: none
 }
 footer
 {
