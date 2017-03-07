@@ -28,6 +28,10 @@ header .icono
 	width:100%;
 	position: absolute;
 }
+#map .map .gmnoprint img
+{
+	width: 30px !important
+}
 /* -------flechas nav-------*/
 .flechas
 {
@@ -60,6 +64,10 @@ header .icono
 {
 	width: 130px;
 	margin-top: 20px
+}
+.precio
+{
+	font-size: 25px
 }
 .autos
 {
@@ -94,7 +102,6 @@ header .icono
 	background: white;
 	padding-top: 10px;
 	font-size: 20px;
-	
 }
 /* ---------footer----------*/
 .pickup

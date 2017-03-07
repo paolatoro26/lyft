@@ -5,9 +5,7 @@ function initMap() {
     center: {lat: -16.457435, lng: -71.53119},
     zoom: 15
   });
-
   var latLongPazPeru={lat: -16.457435, lng:-71.53119};
-
   var marker = new google.maps.Marker({
     position: latLongPazPeru,
     map: map,
@@ -15,7 +13,9 @@ function initMap() {
     label:"w",
     icon:""//ruta del imagen
   	});
+
 }
+
 
 /* -------------- CODIGO SOLO JAVASCRIPT ------------
 var map;

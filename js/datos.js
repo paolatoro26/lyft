@@ -1,4 +1,3 @@
-
 //---------------- CODIGO CON JQUERY ----------------
 $(document).ready(init);
 function init()
@@ -16,8 +15,6 @@ function validarNombre(evt)
 	}else{
 		correcto =true;
 	}
-       
-
 }
 function validarEmail(evt) {
 	if(!/[a-zaA-Z0-9]+[@][a-zA-Z]+[.][a-zA-Z]+/.test($(evt.target).val()) )
