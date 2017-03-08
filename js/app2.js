@@ -15,8 +15,13 @@ function solicitarEstimado()
 }
 function update(_info)
 {
+  var imgauto=localStorage.getItem('imgauto');
+  var nameCar=localStorage.getItem('nameauto');
   $(".calle").text(_info.destino);
+  $(".origen").text(_info.origen);
   $(".precio").text(_info.estimado.moneda+_info.estimado.min+"-"+_info.estimado.max);
+  $(".auto").attr("src",imgauto);
+  $(".selecto h2").text(nameCar);
 }
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -29,7 +34,7 @@ function initMap() {
     map: map,
     title: 'Aqui estoy!!',
     label:"w",
-    icon:"images/carosa.jpg"//ruta del imagen
+    icon:"images/taxi.ico"//ruta del imagen
     });
 }
 

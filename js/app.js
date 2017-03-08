@@ -15,7 +15,25 @@ function initMap() {
   	});
 
 }
-
+$(document).ready(init);
+function init()
+{
+  seleccionAuto();
+}
+function seleccionAuto()
+{
+  var list = $("li");
+  $.each(list,function(){
+  $(this).on('click',onLinkClick)
+   }); 
+}
+function onLinkClick(evt)
+{   
+  var img=$(evt.currentTarget).find("img").attr("src");
+  localStorage.setItem('imgauto',img);
+  var nameCar=$(evt.currentTarget).find(".a-name").text();
+  localStorage.setItem('nameauto',nameCar);
+}
 
 /* -------------- CODIGO SOLO JAVASCRIPT ------------
 var map;

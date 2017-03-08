@@ -16,9 +16,9 @@ function init(){
 }
 function asignaEventoClick ()
 {
-   var list = $("li");
-   $.each(list,function(){
-    $(this).on('click',onLinkClick)
+  var list = $("li");
+  $.each(list,function(){
+  $(this).on('click',onLinkClick)
    }); 
 }
 function onLinkClick(evt)
