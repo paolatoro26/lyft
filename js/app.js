@@ -29,7 +29,7 @@ function seleccionAuto()
 }
 function onLinkClick(evt)
 {   
-  var img=$(evt.currentTarget).find("img").attr("src");
+  var img=$(evt.currentTarget).find(".auto").attr("src");
   localStorage.setItem('imgauto',img);
   var nameCar=$(evt.currentTarget).find(".a-name").text();
   localStorage.setItem('nameauto',nameCar);

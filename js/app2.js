@@ -20,7 +20,7 @@ function update(_info)
   $(".calle").text(_info.destino);
   $(".origen").text(_info.origen);
   $(".precio").text(_info.estimado.moneda+_info.estimado.min+"-"+_info.estimado.max);
-  $(".auto").attr("src",imgauto);
+  $(".a-selecto").attr("src",imgauto);
   $(".selecto h2").text(nameCar);
 }
 function initMap() {
