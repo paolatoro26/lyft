@@ -4,28 +4,31 @@ function init()
 {
 	$("#name").keyup(validarNombre);
 	$("#email").keyup(validarEmail);
+	$(".next").click(llenadoCorrecto);
 }
-var correcto = true;
 function validarNombre(evt)
 {    
-	if($(evt.target).val()==""||/[0-9]+/.test($(evt.target).val()) )
+	if($(evt.target).val().length==""||/[0-9]+/.test($(evt.target).val()) )
 	{
 		alert("Nombre incorrecto, ingrese de nuevo por favor")
-   		correcto = false
-	}else{
-		correcto =true;
 	}
 }
 function validarEmail(evt) {
 	if(!/[a-zaA-Z0-9]+[@][a-zA-Z]+[.][a-zA-Z]+/.test($(evt.target).val()) )
 	{
 		alert("Correo incorrecto, ingrese de nuevo por favor")
-		correcto = false
-	}else{
-		correcto = true;
 	}	
 }
-
+function llenadoCorrecto()
+{
+	var nombres=$("#name").val();
+	var correo=$("#email").val();
+	if(nombres.length=="" || correo.length=="")
+	{
+		alert("Espacio obligatorio");
+		$("footer a").attr("href","datos.html")
+	}
+}
 /* -------------- CODIGO SOLO JAVASCRIPT ------------
 
 function validarEmail()

@@ -7,13 +7,32 @@ function init()
 	$("img").attr("src",imgFlag)
 	$("#span").text(cofigoFlag);
 	$("#codigo-pais").keydown(soloNumeros);
+	$("#codigo-pais").keyup(longitudNumeros);
+	$(".NEXT").click(llenadoCorrecto);
 	$(".NEXT").click(mostrarCodigo);
 }
+var input =$("#codigo-pais");
 function soloNumeros(event)
 {
-	var input =$("#codigo-pais");
-	if(event.keyCode < 45 || event.keyCode > 57) 
+	if(event.keyCode >65 || event.keyCode > 57 & event.keyCode !== 08) 
 		event.preventDefault();		
+}
+function longitudNumeros()
+{
+	var valor=input.val();
+	var salida=$("#notificacion");
+	if(valor.length<9 || valor.length>9)
+	{
+		salida.html("<span style='color:red; font-style:Garamond;'>Máximo 9 numeros</span>");
+	}
+	else{
+		salida.html("<span style='color:green; font-style:Garamond;'>Número Válido</span>"); 
+	}
+}
+function llenadoCorrecto()
+{
+	if (input.val()=="")
+		alert("Espacio obligatorio")
 }
 function mostrarCodigo()
 {
